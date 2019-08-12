@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ShellController">
+
+    <GridPane>
+        <padding>
+            <Insets top="180" left="80"/>
+        </padding>
+        <Label fx:id="l_8" style="-fx-font-size: 30" />
+    </GridPane>
+    <GridPane>
+        <padding>
+            <Insets top="80" left="500"/>
+        </padding>
+        <Label fx:id="l_9" style="-fx-font-size: 20" />
+    </GridPane>
+
+    <GridPane  alignment="center" >
+        <padding>
+            <Insets top="40"/>
+        </padding>
+        <Button onAction="#func1ButtonAction" prefWidth="40" text="◀︎" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button onAction="#func2ButtonAction" prefWidth="40" text="▶︎" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Label fx:id="l_0" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Label fx:id="l_1" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+        <Label fx:id="l_2" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+        <Label fx:id="l_3" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
+        <Label fx:id="l_4" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="7" GridPane.rowIndex="2"/>
+        <Label fx:id="l_5" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="8" GridPane.rowIndex="2"/>
+        <Label fx:id="l_6" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="9" GridPane.rowIndex="2"/>
+        <Label fx:id="l_7" style="-fx-font-size: 40" prefHeight="100.0" prefWidth="50" GridPane.columnIndex="10" GridPane.rowIndex="2"/>
+    </GridPane>
+
+
+    <MenuBar>
+        <Menu text="メニュー">
+            <items>
+                <MenuItem text="リセット" onAction="#menu1Action"/>
+                <MenuItem text="最初に戻る"  onAction="#menu2Action"/>
+            </items>
+        </Menu>
+    </MenuBar>
+
+</AnchorPane>
